@@ -1,11 +1,11 @@
 var game = {
-    width : 640,
-    height : 360,
+    width : 1000,
+    height : 600,
     ctx : undefined,
     platform : undefined,
     ball : undefined,
-    rows : 4,
-    cols : 4,
+    rows : 7,
+    cols : 7,
     blocks : [],
     sprites : {
         background : undefined,
@@ -112,11 +112,11 @@ var game = {
 game.ball = {
     width : 30,
     height : 30,
-    x : 320,
-    y : 295,
+    x : 500,
+    y : 535,
     dx : 0,
     dy : 0,
-    velocity : 3,
+    velocity : 5,
     jump : function() {
         this.dy = - this.velocity;
         this.dx = - this.velocity;
@@ -168,9 +168,9 @@ game.ball = {
 };
 
 game.platform = {
-    x : 280,
-    y : 300,
-    velocity : 6,
+    x : 460,
+    y : 540,
+    velocity : 9,
     dx : 0,
     ball : game.ball,
     width : 110,
